@@ -106,26 +106,26 @@ h1 {
 }
 
 .iwrap {
-    width: clamp(100px, 70vw, 800px);
-    height: clamp(100px, 60vw, 600px);
+    width: clamp(100px, 30vw, 800px);
+    height: clamp(100px, 20vw, 600px);
     padding: 0;
     overflow: hidden;
     margin: auto;
 }
 
 iframe {
-    width: 200%;
-    height: 200%;
+    width: 300%;
+    height: 300%;
 }
 
 iframe {
     transform-origin: 0 0;
-    transform: scale(0.50);
-    -moz-transform: scale(0.50);
+    transform: scale(0.33);
+    -moz-transform: scale(0.33);
     -moz-transform-origin: 0 0;
-    -o-transform: scale(0.50);
+    -o-transform: scale(0.33);
     -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.50);
+    -webkit-transform: scale(0.33);
     -webkit-transform-origin: 0 0;
 }
 

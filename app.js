@@ -53,6 +53,11 @@ app.get('/s4lt/writing', (req, res) => {
   res.render('s4lt/views/writing');
 })
 
+// RDCFLRA
+app.get('/rdcflra', (req, res) => {
+  res.render('rdcflra/views/index');
+})
+
 
 // Listen
 app.listen(PORT, () => console.info(`App listening on port ${PORT}`))

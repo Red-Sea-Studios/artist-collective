@@ -1,0 +1,21 @@
+html {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--black);
+    background: url('/rdcflra/img/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    color: #CE0055;
+    font-family: 'Sen', sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+}
+
+img {
+    width: 300px;
+}
