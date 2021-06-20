@@ -91,6 +91,15 @@ h1 {
 }
 
 
+.iwrap:hover {
+    cursor: pointer;
+}
+
+.iwrap::after {
+    background: red;
+    width: 100%;
+}
+
 .iwrap {
     width: clamp(100px, 70vw, 800px);
     height: clamp(100px, 60vw, 600px);
