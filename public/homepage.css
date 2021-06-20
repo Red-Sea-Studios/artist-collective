@@ -106,8 +106,8 @@ h1 {
 }
 
 .iwrap {
-    width: clamp(100px, 30vw, 800px);
-    height: clamp(100px, 20vw, 600px);
+    width: clamp(300px, 30vw, 800px);
+    height: clamp(200px, 20vw, 600px);
     padding: 0;
     overflow: hidden;
     margin: auto;
