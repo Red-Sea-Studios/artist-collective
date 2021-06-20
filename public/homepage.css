@@ -86,7 +86,6 @@ h1 {
     font-size: clamp(20px, 6vw, 150px);
     margin-top: 50px;
     margin-bottom: 50px;
-    background: black;
     width: -moz-fit-content;
     width: fit-content;
     margin-left: auto;
