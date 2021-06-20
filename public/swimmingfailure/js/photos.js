@@ -6,7 +6,7 @@ $(function() {
             $('#overlay').removeClass('hidden');
     });
 
-    $('#magnified').click(function() {
+    $('#overlay').click(function() {
         $('#overlay').addClass('hidden');
 });
 });

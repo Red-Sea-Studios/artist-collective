@@ -25,7 +25,7 @@ app.get('/swimmingfailure/music', (req, res) => {
   res.render('swimmingfailure/views/music');
 })
 app.get('/swimmingfailure/art', (req, res) => {
-  res.render('swimmingfailure/views/art', { photos: photos });
+  res.render('swimmingfailure/views/art');
 })
 app.get('/swimmingfailure/photos', (req, res) => {
   const photos = getImagesFromDir('public/swimmingfailure/photos');
