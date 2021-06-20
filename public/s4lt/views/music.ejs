@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>S4LT</title>
+        <meta name="description" content="S4LT">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/s4lt/img/favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/s4lt/css/global.css">
+        <link rel="stylesheet" href="/s4lt/css/music.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <a href="/s4lt"><img class="logo" src="/s4lt/img/logo.svg"></a>
+        <nav id="nav"><%- include('partials/nav.ejs', {active: 'Music'}) %></nav>
+        <footer id="footer"><%- include('partials/footer.ejs') %></footer>
+        <script src="/s4lt/js/main.js" async defer></script>
+    </body>
+</html>

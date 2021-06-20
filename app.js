@@ -38,6 +38,21 @@ app.get('/swimmingfailure/writing', (req, res) => {
   res.render('swimmingfailure/views/writing');
 })
 
+// S4LT
+app.get('/s4lt', (req, res) => {
+  res.render('s4lt/views/index');
+})
+app.get('/s4lt/music', (req, res) => {
+  res.render('s4lt/views/music');
+})
+app.get('/s4lt/art', (req, res) => {
+  res.render('s4lt/views/art');
+})
+app.get('/s4lt/writing', (req, res) => {
+  res.render('s4lt/views/writing');
+})
+
+
 // Listen
 app.listen(PORT, () => console.info(`App listening on port ${PORT}`))
 

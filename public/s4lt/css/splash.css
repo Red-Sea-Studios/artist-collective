@@ -1,0 +1,171 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    filter: brightness(75%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+#splash-logo, .logo-layer path {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+} 
+
+#splash-logo {
+    border: solid yellow 10px;
+    border: solid yellow 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    animation-name: borderColor;
+    display: block;
+    width: clamp(300px, 80vw, 2000px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    z-index: 1000;
+}
+
+#logo-top path {
+    animation-name: logoTop;
+}
+
+#logo-middle path {
+    animation-name: logoMiddle;
+}
+
+#logo-bottom path {
+    animation-name: logoBottom;
+}
+
+#nav {
+    background: transparent;
+    position: static;
+    width: 100vw;
+    border-bottom: none;
+    text-align: center;
+    z-index: 50;
+}
+
+#nav li {
+    color: yellow;
+    display: inline-block;
+    position: relative;
+    font-size: 50px;
+    top: 15px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    z-index: 50;
+}
+
+
+
+
+
+@keyframes logoTop {
+    0% {
+        fill: magenta;
+    }
+    50% {
+        fill: yellow;
+    }
+    75% {
+        opacity: 100;
+    }
+    80% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 100;
+    }
+    50% {
+        transform: translate(0vw, 0vh);
+    }
+    89% {
+        opacity: 100;
+        transform: translate(-1vw, -2vh);
+    }
+    90% {
+        transform: translate(0vw, 0vh);
+    }
+    95%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+        fill: cyan;
+    }
+}
+
+@keyframes logoMiddle {
+    0% {
+        fill: cyan;
+    }
+    50% {
+        fill: magenta;
+    }
+    75% {
+        opacity: 100;
+    }
+    82% {
+        opacity: 0;
+    }
+    88% {
+        transform: translate(0vw, 0vh);
+    }
+    89% {
+        opacity: 100;
+        transform: translate(2vw, 3vh);
+    }
+    90% {
+        transform: translate(0vw, 0vh);
+    }
+    95%{
+        opacity: 0;
+    }
+    100% {
+        fill: yellow;
+    }
+}
+
+@keyframes logoBottom {
+    0% {
+        fill: yellow;
+    }
+    50% {
+        fill: cyan;
+    }
+    78% {
+        opacity: 100;
+    }
+    89% {
+        opacity: 0; 
+        transform: translate(0vw, 0vw)
+    }
+    90% {
+        transform: translate(10vw, 9vw)
+    }
+    91% {
+        transform: translate(0vw, 0vw)
+    }
+    100% {
+        fill: magenta;
+    }
+}
+
+@keyframes borderColor {
+    0% {
+        border-color: magenta;
+    }
+    50% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: cyan;
+    }
+}
