@@ -25,10 +25,11 @@ app.get('/swimmingfailure/music', (req, res) => {
   res.render('swimmingfailure/views/music');
 })
 app.get('/swimmingfailure/art', (req, res) => {
-  res.render('swimmingfailure/views/art');
+  const art = getImagesFromDir('public/swimmingfailure/media/art');
+  res.render('swimmingfailure/views/art', { art });
 })
 app.get('/swimmingfailure/photos', (req, res) => {
-  const photos = getImagesFromDir('public/swimmingfailure/photos');
+  const photos = getImagesFromDir('public/swimmingfailure/media/photos');
   res.render('swimmingfailure/views/photos', { photos });
 })
 app.get('/swimmingfailure/tech', (req, res) => {

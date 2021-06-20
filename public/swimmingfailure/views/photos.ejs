@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="/swimmingfailure/css/global.css">
-        <link rel="stylesheet" href="/swimmingfailure/css/photos.css">
+        <link rel="stylesheet" href="/swimmingfailure/css/gallery.css">
         <link rel="stylesheet" href="/swimmingfailure/css/mobile.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
@@ -20,7 +20,7 @@
         <h3>PHOTOS</h3>
         <div id="photos">
             <% photos.forEach((item, index) => { %>
-                    <div class="image" data-photo="/swimmingfailure/photos/<%= item %>" style="background-image:url('/swimmingfailure/photos/<%= item %>');"></div>
+                    <div class="image" data-photo="/swimmingfailure/media/photos/<%= item %>" style="background-image:url('/swimmingfailure/media/photos/<%= item %>');"></div>
             <% }); %>
         </div>
 
@@ -31,6 +31,6 @@
         <nav id="nav"><%- include('partials/nav.ejs') %></nav>
         <footer id="footer"><%- include('partials/footer.ejs') %></footer>        
         <script src="/swimmingfailure/js/main.js" async defer></script>
-        <script src="/swimmingfailure/js/photos.js" async defer></script>
+        <script src="/swimmingfailure/js/gallery.js" async defer></script>
     </body>
 </html>

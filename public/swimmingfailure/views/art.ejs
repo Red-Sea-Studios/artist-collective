@@ -10,17 +10,27 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="/swimmingfailure/css/global.css">
+        <link rel="stylesheet" href="/swimmingfailure/css/gallery.css">
         <link rel="stylesheet" href="/swimmingfailure/css/mobile.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="splash">
-            <h1>ART</h1>
-            <a href="/swimmingfailure"><img class="logo" src="/swimmingfailure/img/logo.png"></a>
+        <h2>SWIMMING FAILURE</h2>
+        <a href="/swimmingfailure"><img class="logo" src="/swimmingfailure/img/logo.png"></a>
+        <h3>PHOTOS</h3>
+        <div id="art">
+            <% art.forEach((item, index) => { %>
+                    <div class="image" data-photo="/swimmingfailure/media/art/<%= item %>" style="background-image:url('/swimmingfailure/media/art/<%= item %>');"></div>
+            <% }); %>
+        </div>
+
+        <div id="overlay" class="hidden">
+            <div id="magnified"></div>
         </div>
 
         <nav id="nav"><%- include('partials/nav.ejs') %></nav>
         <footer id="footer"><%- include('partials/footer.ejs') %></footer>        
         <script src="/swimmingfailure/js/main.js" async defer></script>
+        <script src="/swimmingfailure/js/gallery.js" async defer></script>
     </body>
 </html>

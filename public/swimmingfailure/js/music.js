@@ -1,6 +1,6 @@
-JSON_FILEPATH = "/swimmingfailure/music/!music.json";
-MUSIC_FOLDERPATH = "/swimmingfailure/music/mp3/";
-ART_FOLDERPATH = "/swimmingfailure/music/art/";
+JSON_FILEPATH = "/swimmingfailure/media/music/!music.json";
+MUSIC_FOLDERPATH = "/swimmingfailure/media/music/mp3/";
+ART_FOLDERPATH = "/swimmingfailure/media/music/art/";
 ORIGINALS_DIV = "#originals";
 COVERS_DIV = "#covers";
 AUDIO_ELEM = document.getElementById("audio");

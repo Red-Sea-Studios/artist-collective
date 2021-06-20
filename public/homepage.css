@@ -1,17 +1,119 @@
-html {
-    background-color: #111;
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-.splash {
-    text-align: center;
+/*********************************
+************ RESET ***************
+*********************************/
+
+
+:root {
+    --white: #fff;
+    --gray: #aaa;
+    --black: #111;
+    --border-width: 2px;
 }
+
+html {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Sen', sans-serif;
+    text-align: center;
+    /*font-family: 'Libre Barcode 128 Text', cursive;*/
+}
+
+a {
+    color: var(--white);
+    text-decoration: none; 
+
+}
+
+a:hover {
+   text-decoration: underline; 
+}
+
 
 h1 {
-    color: white;
-    font-size: 50px;
-    font-family: 'Sen', sans-serif;
+    font-size: clamp(20px, 6vw, 150px);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-img {
-    width: 200px;
+.project {
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 25px;
+    position: relative;
+}
+
+
+.iwrap {
+    width: clamp(100px, 70vw, 800px);
+    height: clamp(100px, 60vw, 600px);
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 0px black;
+    margin-bottom: 15px;
+}
+
+iframe {
+    width: 200%;
+    height: 200%;
+}
+
+iframe {
+    transform-origin: 0 0;
+    transform: scale(0.50);
+    -moz-transform: scale(0.50);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.50);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.50);
+    -webkit-transform-origin: 0 0;
 }
