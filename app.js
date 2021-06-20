@@ -1,5 +1,6 @@
 // Imports
 const path = require('path');
+const fs = require('fs');
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -24,10 +25,11 @@ app.get('/swimmingfailure/music', (req, res) => {
   res.render('swimmingfailure/views/music');
 })
 app.get('/swimmingfailure/art', (req, res) => {
-  res.render('swimmingfailure/views/art');
+  res.render('swimmingfailure/views/art', { photos: photos });
 })
 app.get('/swimmingfailure/photos', (req, res) => {
-  res.render('swimmingfailure/views/photos');
+  const photos = getImagesFromDir('public/swimmingfailure/photos');
+  res.render('swimmingfailure/views/photos', { photos });
 })
 app.get('/swimmingfailure/tech', (req, res) => {
   res.render('swimmingfailure/views/tech');
@@ -38,3 +40,26 @@ app.get('/swimmingfailure/writing', (req, res) => {
 
 // Listen
 app.listen(PORT, () => console.info(`App listening on port ${PORT}`))
+
+
+
+// dirPath: target image directory
+function getImagesFromDir(dirPath) {
+  // All iamges holder, defalut value is empty
+  let allImages = [];
+  // Iterator over the directory
+  let files = fs.readdirSync(dirPath);
+  // Iterator over the files and push jpg and png images to allImages array.
+  for (file of files) {
+      let fileLocation = path.join(dirPath, file);
+      var stat = fs.statSync(fileLocation);
+      if (stat && stat.isDirectory()) {
+          getImagesFromDir(fileLocation); // process sub directories
+      } else if (stat && stat.isFile() && ['.jpg', '.png'].indexOf(path.extname(fileLocation)) != -1) {
+          allImages.push(file); // push all .jpf and .png files to all images 
+      }
+  }
+
+  // return all images in array formate
+  return allImages;
+}
