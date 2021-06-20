@@ -2,18 +2,18 @@
 const path = require('path');
 const express = require('express')
 const app = express()
-const port = 5000
+const PORT = process.env.PORT || 5000
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Set Views
-app.set('views', __dirname + '/public/views');
+app.set('views', path.join(__dirname, '/public/views'));
 app.set('view engine', 'ejs');
 
 // Navigation
 app.get('', (req, res) => {
-    res.render('index', { text: 'Hey' });
+    res.render('index');
 })
 app.get('/music', (req, res) => {
   res.render('music');
@@ -32,4 +32,4 @@ app.get('/writing', (req, res) => {
 })
 
 // Listen
-app.listen(port, () => console.info(`App listening on port ${port}`))
+app.listen(PORT, () => console.info(`App listening on port ${PORT}`))
