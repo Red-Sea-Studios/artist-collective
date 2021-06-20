@@ -1,0 +1,55 @@
+@media only screen and (max-width: 500px) {
+    #nav li {
+        font-size: 16px;
+        top: 17px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .track {
+        margin: 6px;
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .track p {
+        padding: 2px;
+        margin-bottom: 0px;
+    }
+ 
+    .track .artist, .track .title {
+        font-size: 12px;
+    }
+
+    .track .date {
+        font-size: 10px;
+    }
+
+    .story {
+        width: 75vw;
+        height: 400px;
+        font-size: 14px;
+    }
+/* 
+    .iwrap {
+        width: 80vw;
+        height: 60vw;
+    }
+    
+    iframe {
+        width: 160vw;
+        height: 120vw;
+    }
+    
+    iframe {
+        zoom: 0.50;
+        -moz-transform: scale(0.50);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.50);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.50);
+        -webkit-transform-origin: 0 0;
+    } */
+  }
