@@ -41,7 +41,7 @@
 
 
 .track p {
-    background: var(--black);
+    background: black;
     width: -moz-fit-content;
     width: fit-content;
     margin-left: auto;
