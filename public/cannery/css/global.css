@@ -73,7 +73,7 @@ h1 {
     padding-bottom: 30px;
 }
 
-img {
+img.logo {
     width: clamp(200px, 15vw, 400px);
     margin-top: 200px;
 }
