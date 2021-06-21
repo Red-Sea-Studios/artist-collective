@@ -58,6 +58,16 @@ app.get('/rdcflra', (req, res) => {
   res.render('rdcflra/views/index');
 })
 
+// CANNERY
+app.get('/cannery', (req, res) => {
+  res.render('cannery/views/index');
+})
+
+// \o_nick_o/ 
+app.get('/nick', (req, res) => {
+  res.render('nick/views/index');
+})
+
 
 // Listen
 app.listen(PORT, () => console.info(`App listening on port ${PORT}`))
