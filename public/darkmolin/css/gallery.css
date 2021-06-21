@@ -1,0 +1,34 @@
+.image {
+    width: clamp(150px, 20vw, 300px);
+    height: clamp(150px, 20vw, 300px);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0px;
+    z-index: 2000;
+    margin: auto;
+    display: flex;
+
+}
+
+#overlay.hidden {
+    display: none;
+}
+
+#magnified {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

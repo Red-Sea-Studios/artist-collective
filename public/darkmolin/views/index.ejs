@@ -8,15 +8,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/x-icon" href="/darkmolin/img/favicon.ico">
         <link rel="stylesheet" href="/darkmolin/css/global.css">
+        <link rel="stylesheet" href="/darkmolin/css/gallery.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     </head>
     <body>
         <div class="splash">
             <img class="logo" src="/darkmolin/img/logo.png">
             <h1>Dark Molin</h1>
         </div>
+        <div id="comics">
+            <% comics.forEach((item, index) => { %>
+                    <div class="image" data-photo="/darkmolin/media/comics/<%= item %>" style="background-image:url('/darkmolin/media/comics/<%= item %>');"></div>
+            <% }); %>
+        </div>
+        <div id="overlay" class="hidden">
+            <div id="magnified"></div>
+        </div>
 
-        <div><%- include('../../back.ejs') %></div>       
+        <div><%- include('../../back.ejs') %></div>      
+        <script>
+            $(function() {
+                console.log("PHOTOS");
+                $('.image').click(function() {
+                        url = $(this).attr('data-photo');
+                        $('#magnified').css('backgroundImage', `url(${url})`);
+                        $('#overlay').removeClass('hidden');
+                });
+
+                $('#overlay').click(function() {
+                    $('#overlay').addClass('hidden');
+            });
+            });
+        </script> 
     </body>
 </html>

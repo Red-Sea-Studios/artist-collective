@@ -75,7 +75,8 @@ app.get('/gr8pink', (req, res) => {
 
 // Dark Molin
 app.get('/darkmolin', (req, res) => {
-  res.render('darkmolin/views/index');
+  const comics = getImagesFromDir('public/darkmolin/media/comics');
+  res.render('darkmolin/views/index', { comics });
 })
 
 // Listen
