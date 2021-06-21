@@ -74,6 +74,6 @@ h1 {
 }
 
 img {
-    width: clamp(200px, 30vw, 400px);
-    margin-top: 20px;
+    width: clamp(200px, 15vw, 400px);
+    margin-top: 200px;
 }
