@@ -68,6 +68,11 @@ app.get('/nick', (req, res) => {
   res.render('nick/views/index');
 })
 
+// GR8 PINK 
+app.get('/gr8pink', (req, res) => {
+  res.render('gr8pink/views/index');
+})
+
 
 // Listen
 app.listen(PORT, () => console.info(`App listening on port ${PORT}`))

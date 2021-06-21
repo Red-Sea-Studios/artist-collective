@@ -56,7 +56,7 @@ html {
     height: 100vh;
     min-height: 100vh;
     background-color: var(--black);
-    background: url('/nick/img/background.jpg');
+    background: url('/gr8pink/img/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -64,18 +64,18 @@ html {
 }
 
 h1 {
-    color: rgb(51, 65, 95);
-    font-family: 'Raleway Dots', cursive;    
+    color: white;
+    font-family: 'Bad Script', cursive;
     font-size: clamp(70px, 8vw, 200px);
     margin-top: 50px;
     padding-top: 45px;
     padding-bottom: 30px;
-    opacity: 40%;
+    text-shadow: 2px 2px 10px black;
 }
 
 img {
     width: clamp(200px, 30vw, 400px);
     margin-top: 20px;
-    opacity: 40%;
     margin-top: 100px;
+    opacity: 20%;
 }
