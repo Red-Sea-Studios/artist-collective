@@ -73,6 +73,10 @@ app.get('/gr8pink', (req, res) => {
   res.render('gr8pink/views/index');
 })
 
+// Dark Molin
+app.get('/darkmolin', (req, res) => {
+  res.render('darkmolin/views/index');
+})
 
 // Listen
 app.listen(PORT, () => console.info(`App listening on port ${PORT}`))
